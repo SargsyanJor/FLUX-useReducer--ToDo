@@ -4,7 +4,6 @@ export const intitialState = {
 };
 
 export const reducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case "changeText":
       return {
@@ -15,7 +14,7 @@ export const reducer = (state, action) => {
       if (state.text.trim() === "") {
         return state;
       }
-      
+
       return {
         ...state,
         todos: [

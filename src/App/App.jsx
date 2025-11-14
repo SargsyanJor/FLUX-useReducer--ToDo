@@ -1,8 +1,8 @@
-import { Input } from './Component/Input/Input'
+import { Input } from '../Component/Input/Input'
 import { useReducer } from 'react'
-import { intitialState, reducer } from './store/store'
+import { intitialState, reducer } from '../store/store'
 
-import './App.css'
+import './Styles/App.css'
 
 function App() {
 
