@@ -7,11 +7,13 @@ import './App.css'
 function App() {
 
   let [state, dispatch] = useReducer(reducer, intitialState)
-  
+
   return (
-    <>
-      <Input state={state} dispatch={dispatch}/>
-    </>
+    <section >
+      <div className="container">
+        <Input state={state} dispatch={dispatch} />
+      </div>
+    </section>
   )
 }
 

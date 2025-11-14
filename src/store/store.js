@@ -12,6 +12,10 @@ export const reducer = (state, action) => {
         text: action.payload,
       };
     case "add":
+      if (state.text.trim() === "") {
+        return state;
+      }
+      
       return {
         ...state,
         todos: [
