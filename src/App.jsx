@@ -1,11 +1,13 @@
 
 import './App.css'
+import { Input } from './Input/Input'
 
 function App() {
 
   return (
     <>
-      
+      <Input />
+
     </>
   )
 }
